@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1800A6671BA9228E00DC3F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800A6661BA9228E00DC3F2A /* AppDelegate.swift */; };
-		1800A6691BA9228E00DC3F2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800A6681BA9228E00DC3F2A /* ViewController.swift */; };
+		1800A6691BA9228E00DC3F2A /* PlaylistMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800A6681BA9228E00DC3F2A /* PlaylistMasterViewController.swift */; };
 		1800A66C1BA9228E00DC3F2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1800A66A1BA9228E00DC3F2A /* Main.storyboard */; };
 		1800A66E1BA9228E00DC3F2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1800A66D1BA9228E00DC3F2A /* Images.xcassets */; };
 		1800A6711BA9228E00DC3F2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1800A66F1BA9228E00DC3F2A /* LaunchScreen.xib */; };
 		1800A67D1BA9228E00DC3F2A /* AlgorhythmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800A67C1BA9228E00DC3F2A /* AlgorhythmTests.swift */; };
+		1800A6871BA9649400DC3F2A /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800A6861BA9649400DC3F2A /* PlaylistDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		1800A6611BA9228E00DC3F2A /* Algorhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1800A6651BA9228E00DC3F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1800A6661BA9228E00DC3F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1800A6681BA9228E00DC3F2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1800A6681BA9228E00DC3F2A /* PlaylistMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistMasterViewController.swift; sourceTree = "<group>"; };
 		1800A66B1BA9228E00DC3F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1800A66D1BA9228E00DC3F2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1800A6701BA9228E00DC3F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1800A6761BA9228E00DC3F2A /* AlgorhythmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorhythmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1800A67B1BA9228E00DC3F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1800A67C1BA9228E00DC3F2A /* AlgorhythmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorhythmTests.swift; sourceTree = "<group>"; };
+		1800A6861BA9649400DC3F2A /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				1800A6661BA9228E00DC3F2A /* AppDelegate.swift */,
-				1800A6681BA9228E00DC3F2A /* ViewController.swift */,
+				1800A6681BA9228E00DC3F2A /* PlaylistMasterViewController.swift */,
+				1800A6861BA9649400DC3F2A /* PlaylistDetailViewController.swift */,
 				1800A66A1BA9228E00DC3F2A /* Main.storyboard */,
 				1800A66D1BA9228E00DC3F2A /* Images.xcassets */,
 				1800A66F1BA9228E00DC3F2A /* LaunchScreen.xib */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1800A6691BA9228E00DC3F2A /* ViewController.swift in Sources */,
+				1800A6871BA9649400DC3F2A /* PlaylistDetailViewController.swift in Sources */,
+				1800A6691BA9228E00DC3F2A /* PlaylistMasterViewController.swift in Sources */,
 				1800A6671BA9228E00DC3F2A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

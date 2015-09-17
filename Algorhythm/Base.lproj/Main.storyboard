@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="5J6-st-uEK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Playlist Master View Controller-->
+        <!--Playlists-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="PlaylistMasterViewController" customModule="Algorhythm" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WtT-Nk-6uI" kind="modal" id="qy1-8i-6WT"/>
+                                    <segue destination="WtT-Nk-6uI" kind="push" identifier="showPlaylistDetail" id="qy1-8i-6WT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,15 +32,16 @@
                             <constraint firstAttribute="centerY" secondItem="aF3-8f-2oJ" secondAttribute="centerY" id="fJy-kE-nNu"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Playlists" id="scP-p6-Hsd"/>
                     <connections>
                         <outlet property="aButton" destination="aF3-8f-2oJ" id="mTA-Pw-d24"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="225.59999999999999" y="303.88"/>
+            <point key="canvasLocation" x="757" y="303"/>
         </scene>
-        <!--Playlist Detail View Controller-->
+        <!--Artists-->
         <scene sceneID="WHO-hr-VTl">
             <objects>
                 <viewController id="WtT-Nk-6uI" customClass="PlaylistDetailViewController" customModule="Algorhythm" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,12 +52,63 @@
                     <view key="view" contentMode="scaleToFill" id="05B-7J-Gut">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LR-OU-e7S">
+                                <rect key="frame" x="38" y="273" width="244" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="0LR-OU-e7S" secondAttribute="centerX" id="B6t-Oo-b7y"/>
+                            <constraint firstAttribute="centerY" secondItem="0LR-OU-e7S" secondAttribute="centerY" id="qe2-YF-EMs"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Artists" id="Con-NF-lMx"/>
+                    <connections>
+                        <outlet property="buttonPressLabel" destination="0LR-OU-e7S" id="RWU-rN-oQF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRn-M5-mLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="597" y="303"/>
+            <point key="canvasLocation" x="1132" y="303"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Cj-ou-oZx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5J6-st-uEK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Ka-XP-0X3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="svu-TY-kgJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prz-fa-NYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225" y="303"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="drn-OO-xbh">
+            <objects>
+                <viewController id="hnL-wn-6TJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="95B-33-0j6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ebo-jO-jzP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iVy-b1-oL4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxe-Fw-y87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

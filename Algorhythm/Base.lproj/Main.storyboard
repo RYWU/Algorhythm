@@ -45,6 +45,7 @@
                     <navigationItem key="navigationItem" title="Playlists" id="scP-p6-Hsd"/>
                     <connections>
                         <outlet property="aButton" destination="aF3-8f-2oJ" id="mTA-Pw-d24"/>
+                        <outlet property="playlistImageView0" destination="9eX-if-leP" id="nGv-qO-pVZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -66,7 +67,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LR-OU-e7S">
                                 <rect key="frame" x="38" y="273" width="244" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
